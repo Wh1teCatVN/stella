@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="xueru-page-title">Xueru's Corner</title>
+    <link rel="icon" href="https://imgur.com/IQztXjh.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="xueru-theme">
+
+<video autoplay muted loop playsinline id="xueru-background-video">
+    <source src="https://res.cloudinary.com/dx8t6r6iv/video/upload/v1747170894/xueru_nflxcq.mp4" type="video/mp4">
+    <span data-i18n="video-unsupported">您的瀏覽器不支持 HTML5 影片。</span>
+</video>
+
+<div id="language-selector">
+    <button data-lang="zh-tw">繁體中文</button>
+    <button data-lang="en">English</button>
+    <button data-lang="vi">Tiếng Việt</button>
+</div>
+
+<div id="top-left-buttons-container">
+    <a href="index.html" id="back-to-main-button">
+        <span class="icon-persona">🐺</span> <span class="text-persona" data-i18n="back-to-main-page">Back to Personas</span>
+    </a>
+</div>
+
+<div class="xueru-page-container">
+    <aside class="xueru-profile-sidebar">
+        <div class="profile-card">
+            <div class="profile-cover-image">
+                <img src="https://imgur.com/VQF1pbP.png" alt="Xueru Cover Photo">
+            </div>
+            <div class="profile-avatar-container">
+                <img src="https://imgur.com/Scudvrz.png" alt="Xueru Avatar" class="profile-avatar">
+            </div>
+            <div class="profile-info">
+                <h1 class="profile-name" data-i18n="xueru-profile-name">Xueru Chen</h1>
+                <p class="profile-nickname" data-i18n="xueru-profile-nickname">Stellapaw - Yukirly</p>
+                <div class="profile-nationality">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/Flag_of_the_Republic_of_China.svg/32px-Flag_of_the_Republic_of_China.svg.png" alt="Taiwan Flag" class="flag-icon">
+                    <span data-i18n="xueru-nationality-text">Taiwan</span>
+                </div>
+                <div class="profile-social-links">
+                    <a href="https://steamcommunity.com/id/StellaPaw/" target="_blank" title="Steam"><i class="fab fa-steam"></i></a>
+                    <a href="https://facebook.com/Yukiidawolf/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://instagram.com/yukiidawolf" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/yukiidawolf" target="_blank" title="Twitter/X"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <main class="xueru-main-content">
+        <nav class="xueru-tabs">
+            <button class="xueru-tab-button active" data-tab="home" data-i18n="xueru-tab-home">Home</button>
+            <button class="xueru-tab-button" data-tab="about" data-i18n="xueru-tab-about">About Me</button>
+            <button class="xueru-tab-button" data-tab="settings" data-i18n="xueru-tab-settings">Game Settings</button>
+            <button class="xueru-tab-button" data-tab="socials" data-i18n="xueru-tab-socials">Social Links</button>
+            <button class="xueru-tab-button" data-tab="qna" data-i18n="xueru-tab-qna">Q&A</button>
+        </nav>
+
+        <div id="xueru-tab-content-home" class="xueru-tab-pane active">
+            <h2 data-i18n="xueru-home-title">My Space</h2>
+            <div class="home-layout">
+                <div class="home-right-details">
+                    <section class="home-section gear-section">
+                        <h3 data-i18n="xueru-gaming-gear-title"><i class="fas fa-gamepad"></i> Gaming Gear</h3>
+                        <div class="gear-grid">
+                            <div class="gear-item">
+                                <img src="https://imgur.com/enWkIba.png" alt="Mouse Logitech G102">
+                                <p data-i18n="xueru-gear-mouse-name">Logitech G102</p>
+                            </div>
+                            <div class="gear-item">
+                                <img src="https://imgur.com/ttzYn5a.png" alt="Keyboard Monka 3075v2 Pro">
+                                <p data-i18n="xueru-gear-keyboard-name">Monka 3075v2 Pro</p>
+                            </div>
+                            <div class="gear-item">
+                                <img src="https://imgur.com/Kp6vveV.png" alt="Headset Razer Kraken Kitty V2">
+                                <p data-i18n="xueru-gear-headset-name">Razer Kraken Kitty V2</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="home-section ranks-section">
+                        <h3 data-i18n="xueru-rank-title"><i class="fas fa-trophy"></i> Game Ranks</h3>
+                        <div class="ranks-grid">
+                            <div class="rank-item">
+                                <img src="https://imgur.com/9DJEx2i.png" alt="Faceit Rank Challenger Top SEA">
+                                <p data-i18n="xueru-rank-faceit-name">Challenger (Top SEA)</p>
+                                <span class="rank-game" data-i18n="xueru-rank-faceit-game">Faceit</span>
+                            </div>
+                            <div class="rank-item">
+                                <img src="https://imgur.com/X6u9xOU.png" alt="CS2 Rank 20.000+">
+                                <p data-i18n="xueru-rank-cs2-elo">20.000+</p>
+                                <span class="rank-game" data-i18n="xueru-rank-cs2-game">CS2</span>
+                            </div>
+                            <div class="rank-item">
+                                <img src="https://imgur.com/vQsQJMb.png" alt="CS:GO Rank SMFC">
+                                <p data-i18n="xueru-rank-csgo-name">SMFC</p>
+                                <span class="rank-game" data-i18n="xueru-rank-csgo-game">CS:GO</span>
+                            </div>
+                            <div class="rank-item">
+                                <img src="https://imgur.com/V8ByIeV.png" alt="Valorant Rank Radiant">
+                                <p data-i18n="xueru-rank-valorant-name">Radiant</p>
+                                <span class="rank-game" data-i18n="xueru-rank-valorant-game">Valorant</span>
+                            </div>
+                        </div>
+                    </section>
+           
+                </div>
+            </div>
+        </div>
+
+        <div id="xueru-tab-content-about" class="xueru-tab-pane">
+            <h2 data-i18n="xueru-about-title">The Lowdown</h2>
+            <div class="about-me-content">
+                <p data-i18n="xueru-about-intro"></p>
+                <p data-i18n="xueru-about-origin"></p>
+                <p data-i18n="xueru-about-education"></p>
+                <p data-i18n="xueru-about-hobbies"></p>
+            </div>
+        </div>
+
+        <div id="xueru-tab-content-settings" class="xueru-tab-pane">
+            <h2 data-i18n="xueru-settings-title">My Game Settings</h2>
+            <section class="game-settings-section cs2-settings">
+                <h3 data-i18n="xueru-settings-cs2-title">Counter-Strike 2</h3>
+                <div class="settings-grid">
+                    <div class="settings-category">
+                        <h4 data-i18n="xueru-settings-cs2-mouse">Mouse Settings</h4>
+                        <ul data-i18n-list="xueru-cs2-mouse-list">
+                            <li></li><li></li><li></li>
+                        </ul>
+                    </div>
+                    <div class="settings-category">
+                        <h4 data-i18n="xueru-settings-cs2-video-title">Video Settings</h4>
+                        <ul data-i18n-list="xueru-cs2-video-list">
+                           <li></li><li></li><li></li><li></li><li></li>
+                        </ul>
+                    </div>
+                    <div class="settings-category">
+                        <h4 data-i18n="xueru-settings-cs2-viewmodel-title">Viewmodel</h4>
+                        <p class="code-block" data-i18n="xueru-cs2-viewmodel-commands"></p>
+                    </div>
+                    <div class="settings-category">
+                        <h4 data-i18n="xueru-settings-cs2-launch-title">Launch Options</h4>
+                        <p class="code-block" data-i18n="xueru-cs2-launch-options"></p>
+                    </div>
+                    <div class="settings-category wide-category">
+                        <h4 data-i18n="xueru-settings-cs2-autoexec-title">Autoexec</h4>
+                        <pre class="code-block" data-i18n="xueru-cs2-autoexec-content"></pre>
+                    </div>
+                     <div class="settings-category">
+                        <h4 data-i18n="xueru-settings-cs2-config-file-title">Config File</h4>
+                        <p data-i18n="xueru-cs2-config-file-info"></p>
+                    </div>
+                </div>
+            </section>
+            <section class="game-settings-section valorant-settings">
+                <h3 data-i18n="xueru-settings-valorant-title">Valorant</h3>
+                 <div class="settings-grid">
+                    <div class="settings-category">
+                        <h4 data-i18n="xueru-settings-valorant-mouse">Mouse Settings</h4>
+                        <ul data-i18n-list="xueru-valorant-mouse-list">
+                            <li></li><li></li><li></li>
+                        </ul>
+                    </div>
+                    <div class="settings-category">
+                        <h4 data-i18n="xueru-settings-valorant-keybinds">Keybinds</h4>
+                        <ul data-i18n-list="xueru-valorant-keybinds-list">
+                            <li></li><li></li><li></li><li></li>
+                        </ul>
+                    </div>
+                    <div class="settings-category">
+                        <h4 data-i18n="xueru-settings-valorant-video-title">Video Settings</h4>
+                         <ul data-i18n-list="xueru-valorant-video-list">
+                            <li></li><li></li><li></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="xueru-tab-content-socials" class="xueru-tab-pane">
+            <h2 data-i18n="xueru-socials-title">My Socials</h2>
+            <div class="social-links-columns-container">
+                <div class="social-column">
+                    <h3 data-i18n="xueru-socials-column-left-title">Main Hangouts</h3>
+                    <ul class="social-links-list">
+                        <li>
+                            <i class="fab fa-twitch"></i> 
+                            <span data-i18n="social-platform-twitch">Twitch</span>: 
+                            <a href="https://twitch.tv/yukirly" target="_blank" data-i18n="xueru-social-twitch-link">yukirly</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-youtube"></i> 
+                            <span data-i18n="social-platform-youtube">YouTube</span>: 
+                            <a href="[URL_YOUTUBE_yukirly_CUA_BAN]" target="_blank" data-i18n="xueru-social-youtube-link">yukirly</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-column">
+                    <h3 data-i18n="xueru-socials-column-right-title">Other Spots</h3>
+                    <ul class="social-links-list">
+                        <li>
+                            <i class="fab fa-instagram"></i> 
+                            <span data-i18n="social-platform-instagram">Instagram</span>: 
+                            <a href="https://instagram.com/yukiidawolf" target="_blank" data-i18n="xueru-social-instagram-link">@yukiidawolf</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-facebook-f"></i> 
+                            <span data-i18n="social-platform-facebook">Facebook</span>: 
+                            <a href="https://facebook.com/Yukiidawolf/" target="_blank" data-i18n="xueru-social-facebook-link">Yukiidawolf</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i> 
+                            <span data-i18n="social-platform-twitter">Twitter/X</span>: 
+                            <a href="https://twitter.com/yukiidawolf" target="_blank" data-i18n="xueru-social-twitter-link">@yukiidawolf</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="social-column"> 
+                    <h3 data-i18n="xueru-socials-gameprofiles-title">Game Profiles & Stats</h3>
+                    <ul class="social-links-list game-profile-list">
+                         <li>
+                            <i class="fab fa-steam"></i> 
+                            <span data-i18n="social-platform-steam">Steam</span>: 
+                            <a href="https://steamcommunity.com/id/StellaPaw/" target="_blank" data-i18n="xueru-social-steam-link">StellaPaw</a>
+                        </li>
+                        <li>
+                            <img src="https://imgur.com/FG5RtYd.png" alt="5EPlay Logo" class="logo-image">
+                            <span data-i18n="social-platform-5eplay">5EPlay</span>: 
+                            <a href="https://arena.5eplay.com/data/player/XiaoMaoOWO" target="_blank" data-i18n="xueru-social-5eplay-link">XiaoMaoOWO</a>
+                        </li>
+                        <li>
+                            <img src="https://imgur.com/cyOZ4t9.png" alt="Faceit Logo" class="logo-image">
+                            <span data-i18n="social-platform-faceit">Faceit</span>: 
+                            <a href="https://www.faceit.com/en/players/stellapaw" target="_blank" data-i18n="xueru-social-faceit-link">stellapaw</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-chart-line"></i> 
+                            <span data-i18n="social-platform-csstats">CSStats</span>: 
+                            <a href="https://csstats.gg/player/76561198877048762" target="_blank" data-i18n="xueru-social-csstats-link">Player Profile</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="social-usernames-section">
+                <h3 data-i18n="xueru-socials-usernames-title">Other IDs</h3>
+                <ul class="username-list">
+                    <li>
+                        <i class="fab fa-qq"></i> 
+                        <span class="username-platform" data-i18n="username-platform-qq">QQ</span>: 
+                        <span class="username-value" data-i18n="xueru-username-qq-id">2997125715</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-weixin"></i> 
+                        <span class="username-platform" data-i18n="username-platform-wechat">WeChat</span>: 
+                        <span class="username-value" data-i18n="xueru-username-wechat-id">StellaPaw</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-tiktok"></i>
+                        <span class="username-platform" data-i18n="username-platform-douyin">Douyin</span>: 
+                        <span class="username-value" data-i18n="xueru-username-douyin-id">yukirly</span>
+                    </li>
+                    <li>
+                        <i class="fab fa-discord"></i> <span class="username-platform" data-i18n="username-platform-discord">Discord</span>: 
+                        <span class="username-value" data-i18n="xueru-username-discord-id">stella553</span>
+                    </li>
+                    </ul>
+            </div>
+        </div>
+
+        <div id="xueru-tab-content-qna" class="xueru-tab-pane">
+            <h2 data-i18n="xueru-qna-title">Q&A</h2>
+            <div class="qna-item">
+                <h4 data-i18n="xueru-qna-item1-q"></h4>
+                <p data-i18n="xueru-qna-item1-a"></p>
+            </div>
+            <div class="qna-item">
+                <h4 data-i18n="xueru-qna-item2-q"></h4>
+                <p data-i18n="xueru-qna-item2-a"></p>
+            </div>
+            <div class="qna-item">
+                <h4 data-i18n="xueru-qna-item3-q"></h4>
+                <p data-i18n="xueru-qna-item3-a"></p>
+            </div>
+             <div class="qna-item">
+                <h4 data-i18n="xueru-qna-item4-q"></h4>
+                <p data-i18n="xueru-qna-item4-a"></p>
+            </div>
+             <div class="qna-item">
+                <h4 data-i18n="xueru-qna-item5-q"></h4>
+                <p data-i18n="xueru-qna-item5-a"></p>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script src="common.js" defer></script>
+<script src="xueru-specific.js" defer></script>
+</body>
+</html>
